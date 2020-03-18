@@ -1,0 +1,101 @@
+
+.global
+{
+	margin-left : 140px;
+}
+.boutons
+{	
+	margin-top :70px;
+}
+
+.button
+{
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.3s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 1px solid #555555;
+}
+
+.button1:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.boutons li
+{
+	list-style:none;
+}
+
+.lesEmprunts
+{
+	margin-top :30px;
+	margin-right : 380px;
+    border-width: 1px;
+    border-color:#555555;
+	border-style:solid;
+    padding: 10px;
+	border-radius: 10px;
+}
+
+.lesEmprunts .titre
+{
+	font-size:150%;
+	font-style:oblique;
+}
+
+
+.emprunts .boutonE
+{
+	margin-top :20px;
+	list-style:none;
+}
+
+.Catalogue
+{
+	/*width : 100%;*/
+	height:680px;
+	margin-top :50px;
+}
+
+.Ajout
+{
+	margin-top :20px;
+}
+
+.Disponibilite
+{
+	margin-top :20px;
+	margin-right:1200px;
+}
+
+.ReservationCadre
+{
+	margin-top :30px;
+	margin-right : 580px;
+    border-width: 1px;
+    border-color:#555555;
+	border-style:solid;
+    padding: 30px;
+	border-radius: 10px;
+}
+
+.ReservationCadre .titre
+{
+	font-size:150%;
+	font-style:oblique;
+}
