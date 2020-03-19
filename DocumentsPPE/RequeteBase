@@ -1,0 +1,37 @@
+
+create table joueur (
+	id_licence SERIAL PRIMARY KEY,
+	nomuser varchar(50) NOT NULL,
+	prenomuser varchar(50) NOT NULL,
+	mail varchar(50) NOT NULL,
+	tel varchar(20) NOT NULL,
+	genreuser char,
+	niveauuser varchar(20),
+	statutuser varchar(20),
+	tournoi_id INTEGER,
+	mdpuser varchar(20) NOT NULL,
+	fct_convoit varchar(20),
+	nbplace INTEGER
+);
+
+CREATE TABLE emprunt (
+	id_emprunt SERIAL PRIMARY KEY,
+	dateemprunt_id DATE REFERENCES date(date),
+	dateretour_id DATE REFERENCES date(date),
+	carte_id INTEGER REFERENCES jeucarte(id_carte),
+	licence_id INTEGER REFERENCES joueur(id_licence),
+	livre_id INTEGER REFERENCES livre(id_livre)
+)	
+
+CREATE TABLE objet (
+	id_objet SERIAL PRIMARY KEY,
+	titre VARCHAR (100),
+	dateO date,
+	dispo boolean,
+	type VARCHAR (100),
+	auteur VARCHAR (100),
+	commentaire VARCHAR (1000),
+	licence_id INTEGER REFERENCES joueur(id_licence)
+)
+
+	

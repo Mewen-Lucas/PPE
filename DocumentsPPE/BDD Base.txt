@@ -1,0 +1,69 @@
+TABLES :
+
+Utilisateur
+	Numero d'utilisateur (incrémental 10 chiffres)
+	Nom (chaine 50)
+	Prenom (chaine 50)
+	Domicile (FK Ville)
+	Numero de Telephone (chaine 10)
+	Mail (chaine 50)
+	Fonction (Conducteur(C) / Voyageur (V) / Les Deux (D)) (Caractère 1)
+	Voiture places libres (FK Voiture)
+	
+sympathisants
+	id (autoincrement)
+	nom(varchar)
+	prenom(varchar)
+
+Evenement
+	Type (Libre (L) / Exeptionnel (E))
+	Libelle (chaine 100)
+	Heure Début (Heure)
+	Heure Fin (Heure)
+	Lieu (FK Ville)
+
+Ville
+	Nom Ville (50 chaine)
+	
+RDV
+	Lieu (FK Ville)
+	Heure (heure)
+	Trajet (FK Trajet)
+	
+Voiture
+	Nb Places (entier 2)
+	Nb Places libres (entier 2)
+	Nb places occupées (entier 2)
+
+Places
+	Conducteur (FK Utilisateur)
+	
+
+Trajet
+	Code Trajet (Incremental Entier 10)
+	Trajet Départ (FK Ville)
+	Trajet Arrivée (FK Ville)
+	Trajet (CONCAT 2 précédents)
+
+Préféré
+	Num Utilis (FK Utilisateur)
+	Code trajet (FK Trajet)
+	
+Livres
+	No_livre (entier incrémental) 
+	Nom_livre (Chaine 50)
+	Auteur (Chaine 50)
+	Etat (Char 1)
+
+Emprunt
+	No_livre (fk livres)
+	Nom_livre (fk livres)
+	No_carte (fk Jeux_cartes)
+	Date_emprunt (date)
+	Date_retour (date)
+	No_proprio (fk Utilisateur, Numero d'utilisateur)
+	No_emprunteur (fk Utilisateur, Numero d'utilisateur)
+
+Jeux_cartes 
+	No_carte (entier incrémental) 
+	Etat (Char 1)
