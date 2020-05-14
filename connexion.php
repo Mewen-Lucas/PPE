@@ -21,8 +21,8 @@
      $curseurLivre->execute();
      $unLivre = $curseurLivre->fetch();
      	echo("<form action='AjoutModif.php' method='post'>");
-		 echo("<input class='boutonImage' type='image' value='Ajouter' src='ajouter.svg'>");
-	echo("</form>");
+		  echo("<button class='button button1' type='text' value='Ajouter' >Ajouter un livre</button>");
+	    echo("</form>");
     echo("<table>");
         echo("<caption>Liste de livres</caption>");
         echo("<tbody>");
