@@ -36,14 +36,13 @@
                  echo("<input type='text' name='idlicence' />");
                  echo("</td>");
             echo("</tr>");
-            echo("<td>");               
-                    echo("<input class='boutonImage' type='image' value='insérer' src='inserer.jpg'>");
-            echo("</td>");
+                   echo("<button class='button button1' type='text' value='Ajouter' >Ajouter </button>");
         echo("</form>"); 
         echo("<form action='connexion.php' method='post'>");
-            echo("<td>");  
-                echo("<input class='boutonImage' type='image' value='annuler' src='annuler.png'>");
-            echo("</td>");
+ 
+                echo("<button class='button button1' type='text' value='Annuler' >Annuler </button>");
+
+
         echo("</form>"); 
     echo("</tbody>");
     echo("</table>");
