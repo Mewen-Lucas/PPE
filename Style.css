@@ -99,3 +99,30 @@
 	font-size:150%;
 	font-style:oblique;
 }
+table {
+    border: medium solid #6495ed;
+    border-collapse: collapse;
+    width: 40%;
+    }
+    th {
+    border: thin solid #6495ed;
+    width: 30%;
+    padding: 3px;
+    background-color: #D0E3FA;
+    }
+    td {
+    border: thin solid #6495ed;
+    width: 30%;
+    padding: 1px;
+    text-align: center;
+    background-color: #ffffff;
+    }
+    caption {
+    font-family: sans-serif;
+    font-size: 22;
+    font-weight: bold;
+    }
+
+    .boutonImage{
+        width: 20%;
+    }
